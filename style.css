@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    background-color: palegreen;
+    grid-template-rows: 1fr 8fr 1fr;
+/*falta agregar las partes como se compone el grid*/
+grid-template-areas: 
+"n m"
+"n m"
+"ft ft ";
+}
+
+.container nav {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: blue;
+        grid-area: n;
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        justify-content: start;
+        align-items: center;
+        width: 7vw;
+        height: 90vh;
+    }
+
+.logo {
+    display: flex;
+    font-size: 100px;
+    margin-top: 20px;
+  
+}
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 140%;
+}
+
+.secciones {
+    display: flex;
+    padding-top: 2px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-self: self-start;
+    padding-left: 3%;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+
+.menu-responsivo {
+    display: none;
+}
+
+.container main {
+    background-color: bisque;
+    grid-area: m;
+    display: flex;
+    overflow: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 93vw;
+    height: 90vh;
+}
+
+.card-1 {
+    display: none;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.imagen-1 {
+    display: flex;
+}
+
+.imagen-2 {
+    display: none;
+}
+
+.button {
+    display: flex;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-escritorio {
+    display: flex;
+    font-size: 40px;
+    background-color:cornflowerblue;
+    grid-area: ft;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width:576px) {
+    .container {
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "n"
+    "m"
+    "ft";
+    }
+    
+    .container nav {
+        display: none; /* estoy probando el sacar esta nav para hacr una nueva para este formato*/
+        /*display: flex;*/
+        background-color: blue;
+        grid-area: n;
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+}
+
+.container main {
+    background-color: bisque;
+    grid-area: m;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 0px 30px;
+}
+
+.imagen-1 {
+    display: none;
+}
+
+.imagen-2 {
+display: flex;
+}
+
+.footer-mobile {
+    display: flex;
+    font-size: 40px;
+    background-color:RGB(173, 216, 230);
+    grid-area: ft;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.footer-escritorio {
+    display: none;
+}
+
+.menu-responsivo {
+    display: flex;
+    background-color: RGB(173, 216, 230);
+    height: 10vh;
+    width: 100vw;
+    font-size: 45px;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: n;
+}
+
+.auto {
+    margin-left: 5%;
+  
+}
+
+.menu {
+    margin-right: 7%;
+    
+}
+
+}
