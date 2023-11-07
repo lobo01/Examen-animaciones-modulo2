@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 0px;
     margin: 0px;
 }
@@ -22,7 +22,7 @@ grid-template-areas:
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        background-color: blue;
+        background-color: rgb(87, 128, 63);
         grid-area: n;
         color: whitesmoke;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -59,7 +59,14 @@ grid-template-areas:
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
-   
+    color: white;
+}
+
+.secciones a {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+
 }
 
 
@@ -68,7 +75,7 @@ grid-template-areas:
 }
 
 .container main {
-    background-color: bisque;
+    background-color: white;
     grid-area: m;
     display: flex;
     overflow: auto;
@@ -82,12 +89,35 @@ grid-template-areas:
     display: none;
 }
 
+
+.card-2 p {
+    padding: 5px;
+}
+
+.card p {
+    padding: 5px;
+}
+
+.card button {
+    padding: 5px;
+}
+
+.card-2 button {
+    padding: 5px;
+}
+
 .card-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    border: 2px solid #8ab18d;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .card {
@@ -96,6 +126,12 @@ grid-template-areas:
     justify-content: center;
     align-items: center;
     padding: 30px;
+    border: 2px solid #8ab18d; /* Borde con un color suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .imagen-1 {
@@ -125,7 +161,7 @@ grid-template-areas:
     display: flex;
     flex-direction: column;
     font-size: 40px;
-    background-color:cornflowerblue;
+    background-color:rgb(127, 194, 100);
     grid-area: ft;
     justify-content: center;
     align-items: center;
@@ -170,7 +206,7 @@ grid-template-areas:
 }
 
 .container main {
-    background-color: bisque;
+    background-color: white;
     grid-area: m;
     display: flex;
     justify-content: space-around;
@@ -184,7 +220,23 @@ grid-template-areas:
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 30px 0px 30px;
+    padding: 30px;
+    border: 2px solid #8ab18d; /* Borde con un color suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.card-1 p {
+    padding: 5px;
+}
+
+.card-1 button {
+    padding: 5px;
 }
 
 .imagen-1 {
